@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(26,181,180);
+  background: linear-gradient(219deg, rgba(26,181,180,1) 25%, rgba(241,85,104,1) 77%);
+}
+
+#card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 550px;
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0px 2px 23px 2px rgba(255,45,223,0.34); 
+  box-shadow: 0px 2px 23px 2px rgba(255,45,223,0.34);
+}
+
+
+#fire-icon{
+  font-size: 55px;
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 30px;
+}
+
+input{
+  width: 100%;
+  padding: 8px;
+  background: none;
+  outline: none;
+  border: 1px solid rgb(197, 193, 193);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 27px 1px rgba(213, 210, 214, 0.43);
+  transition: 0.5s ease;
+}
+
+input[type="email"]{
+  background: url(../img/user.svg) no-repeat 15px center;
+  background-size: 25px;
+  text-align: center;
+}
+
+input[type="password"]{
+  background: url(../img/key-solid.svg) no-repeat 15px center;
+  background-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input:hover{
+  letter-spacing: 2px;
+}
+
+
+form label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+form a {
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+button{
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 8px;
+  background: rgb(26,181,180);
+  background: linear-gradient(219deg, rgba(26,181,180,1) 25%, rgba(241,85,104,1) 77%);
+}
+
+.sociais{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sociais div{
+  width: 33%;
+}
+
+.sociais div>i {
+  font-size: 40px;
+}
+
+.midia-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i[id="facebook"]{
+  color: #1877F2;
+}
+i[id="apple"]{
+  color: #615d5d;
+}
+i[id="git"]{
+  color: rgb(0, 0, 0);
+}
